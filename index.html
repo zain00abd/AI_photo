@@ -1,25 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h2>AI Images Generator</h2>
-    <div class="images">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
-    <div class="prompt">
-        <input id="inp" type="text">
-        <button onclick="getImage()">Generate</button>
-    </div>
-    <script src="script.js"></script>
+    <div class="flex flex-col items-center justify-center h-screen">
+        <div class="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6" id="pack_1">
+          <h2 class="text-2xl font-bold text-gray-200 mb-4 ">Sign Up</h2>
+          <form class="flex flex-col">
+            <div class="flex space-x-4 mb-4">
+              
+            </div>
+            <input
+              placeholder="الاسم"
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+              type="text"
+            />
+            <input
+              placeholder="Email"
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+              type="email"
+            />
+            <input
+              placeholder="Confirm Email"
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+              type="email"
+            />
+            <input
+              placeholder="Password"
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+              type="password"
+            />
+            <input
+              placeholder="Confirm Password"
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+              type="password"
+            />
+            <label class="text-sm mb-2 text-gray-400 cursor-pointer" for="age">
+              من تاريخ
+            </label>
+            <input
+            class="bg-gray-700 text-gray-200 border-0 rounded-md p-2"
+            id="age"
+            type="date"
+            />
+            <label class="text-md mb-2 font-bold text-white  cursor-pointer" for="age">
+              حتى تاريخ
+            </label>
+            <input
+            class="bg-gray-700 text-gray-200 border-0 rounded-md p-2"
+            id="age5"
+            type="date"
+            />
+            <label class="text-sm mb-4 text-gray-400 cursor-pointer" for="gender">
+              Gender
+            </label>
+            <select
+              class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+              id="gender"
+            >
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <button
+              class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
+              type="submit"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </div>
 </body>
-
 </html>
